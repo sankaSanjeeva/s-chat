@@ -21,6 +21,9 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "react/react-in-jsx-scope": "off"
-  }
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["tw", "css"] }],
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "ignorePatterns": ["tailwind.config.js"]
 }
