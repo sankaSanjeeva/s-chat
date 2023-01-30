@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Global } from "@emotion/react";
 import { GlobalStyles } from "twin.macro";
 import "./index.css";
 import App from "./App";
+import { stylesBase, ThemeProvider } from "./theme";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
@@ -10,8 +12,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <GlobalStyles />
-    <App />
+    <ThemeProvider>
+      <GlobalStyles />
+      <Global styles={stylesBase} />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
 );
 
