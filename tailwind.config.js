@@ -1,12 +1,15 @@
-const colors = require("tailwindcss/colors");
-
 module.exports = {
   theme: {
-    colors: {
-      ...colors,
-      white: "#FFFFFF",
-      black: "000000",
-      active: "36CE00",
+    extend: {
+      backgroundColor: {
+        primary: "var(--bg-primary)",
+        secondary: "var(--bg-secondary)",
+      },
+      textColor: {
+        primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
+        tertiary: "var(--text-tertiary)",
+      },
     },
     fontFamily: {
       sans: ["Roboto"],

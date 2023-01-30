@@ -1,12 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import "twin.macro";
+import { Chat, Contact, Info } from "./components";
 
 export default function Overview() {
   return (
-    <div>
-      <p tw="font-bold">Roboto bold</p>
-      <p tw="font-medium">Roboto medium</p>
-      <p tw="font-normal">Roboto regular</p>
+    <div tw="flex h-screen">
+      <Contact />
+      <Chat />
+      <Info />
     </div>
   );
 }
