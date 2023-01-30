@@ -8,6 +8,9 @@ module.exports = {
       black: "000000",
       active: "36CE00",
     },
+    fontFamily: {
+      sans: ["Roboto"],
+    },
   },
   plugins: [],
 };
