@@ -1,9 +1,9 @@
-name: Validate Pull Requests
+name: Deploy
 
 on:
   pull_request:
     branches:
-      - develop
+      - master
 
 jobs:
   test_pull_request:
@@ -16,3 +16,4 @@ jobs:
       - run: yarn
       - run: yarn tsc
       - run: yarn test
+      - run: yarn deploy
