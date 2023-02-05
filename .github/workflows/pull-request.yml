@@ -3,13 +3,12 @@ name: Validate Pull Requests
 on:
   pull_request:
     branches:
-    - master
-    - develop
+      - develop
 
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
@@ -17,4 +16,3 @@ jobs:
       - run: yarn
       - run: yarn tsc
       - run: yarn test
-

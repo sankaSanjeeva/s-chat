@@ -1,7 +1,7 @@
 {
   "name": "s-chat",
   "version": "0.1.0",
-  "homepage": "https://sankaSanjeeva.github.io/s-chat",
+  "homepage": "https://sankasanjeeva.github.io/s-chat/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
